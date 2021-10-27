@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/agc_iam_card_btn_root"
+    android:layout_width="match_parent"
+    android:layout_height="46dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+
+    <View
+        android:id="@+id/agc_iam_card_line"
+        android:layout_width="0.5dp"
+        android:layout_height="24dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/agc_iam_line" />
+
+    <TextView
+        android:id="@+id/agc_iam_card_btn_minor"
+        android:layout_width="@dimen/agc_iam_btn_max_width"
+        android:layout_height="36dp"
+        android:layout_marginStart="@dimen/agc_iam_btn_margin"
+        android:layout_toStartOf="@id/agc_iam_card_line"
+        android:background="@drawable/agc_iam_btn_selector"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/agc_iam_btn_color"
+        android:textSize="@dimen/agc_iam_btn_text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/agc_iam_card_btn_major"
+        android:layout_width="@dimen/agc_iam_btn_max_width"
+        android:layout_height="36dp"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="@dimen/agc_iam_btn_margin"
+        android:layout_toEndOf="@id/agc_iam_card_line"
+        android:background="@drawable/agc_iam_btn_selector"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/agc_iam_btn_color"
+        android:textSize="@dimen/agc_iam_btn_text_size"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,89 @@
+{
+  "_from": "@cordova-plugin-agconnect/appmessaging",
+  "_id": "@cordova-plugin-agconnect/appmessaging@1.2.0-beta.1",
+  "_inBundle": false,
+  "_integrity": "sha512-nhL19GBe3CtBeRWTBiBg8srsRXcqoQDZmiMlccJsQP49KIDOGO6W6pOSS+dxxhCHtOCjUDRnvj59u4sDnDE2wQ==",
+  "_location": "/@cordova-plugin-agconnect/appmessaging",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@cordova-plugin-agconnect/appmessaging",
+    "name": "@cordova-plugin-agconnect/appmessaging",
+    "escapedName": "@cordova-plugin-agconnect%2fappmessaging",
+    "scope": "@cordova-plugin-agconnect",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "http://npm.cloudartifact.dgg.dragon.tools.huawei.com/artifactory/api/npm/npm-ccs/@cordova-plugin-agconnect/appmessaging/-/@cordova-plugin-agconnect/appmessaging-1.2.0-beta.1.tgz",
+  "_shasum": "164112cd3c672b65e8d9b2c232915575056730b9",
+  "_spec": "@cordova-plugin-agconnect/appmessaging",
+  "_where": "/Users/yaojun/Desktop/跨平台框架/AGC-Client-Hybrid 1.2.0众/cordova-agc-appmessaging-demo",
+  "bugs": {
+    "url": "https://github.com/AppGalleryConnect/agc-cordova-plugin/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "appmessaging",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "dependencies": {
+    "@angular/core": "^10.2.3",
+    "@ionic-native/core": "^5.29.0",
+    "rxjs": "^6.6.3",
+    "typescript": "^4.1.2"
+  },
+  "deprecated": false,
+  "description": "Cordova Plugin AGC AppMessaging",
+  "devDependencies": {
+    "@types/cordova": "0.0.34"
+  },
+  "files": [
+    "hooks",
+    "ionic",
+    "res",
+    "scripts",
+    "platforms",
+    "types",
+    "www",
+    "package.json",
+    "plugin.xml",
+    "README.md",
+    "LICENCE",
+    "tsconfig.json"
+  ],
+  "homepage": "https://developer.huawei.com/consumer/en/agconnect/",
+  "keywords": [
+    "cordova",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "appmessaging",
+    "huawei-appmessaging",
+    "agc-appmessaging"
+  ],
+  "license": "Apache-2.0",
+  "licenseFilename": "LICENCE",
+  "name": "@cordova-plugin-agconnect/appmessaging",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AppGalleryConnect/agc-cordova-plugin.git",
+    "directory": ""
+  },
+  "scripts": {
+    "build": "npm run build:core",
+    "build:core": "tsc",
+    "watch": "tsc --watch"
+  },
+  "title": "Cordova Plugin AGC AppMessaging",
+  "types": "./types/index.d.ts",
+  "version": "1.2.0-beta.1"
+}

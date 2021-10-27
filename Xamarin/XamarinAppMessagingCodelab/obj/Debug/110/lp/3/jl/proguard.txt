@@ -1,0 +1,12 @@
+-keep class com.huawei.agconnect.appmessaging.*{*;}
+-keep class com.huawei.agconnect.appmessaging.model**{*;}
+
+-keepclassmembers class **{
+    public <init>(android.content.Context,com.huawei.agconnect.AGConnectInstance);
+}
+
+-keep class com.huawei.agconnect.appmessaging.internal.server.**{*;}
+
+-keep class * implements android.os.Parcelable {
+    public static final android.os.Parcelable$Creator *;
+}

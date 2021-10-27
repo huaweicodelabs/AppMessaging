@@ -1,0 +1,28 @@
+PODS:
+  - AGConnectAppMessaging (1.2.1.300):
+    - AGConnectCredential (~> 1.2.1)
+  - AGConnectCore (1.2.1.300):
+    - HMFoundation (~> 1.2.1)
+  - AGConnectCredential (1.2.1.300):
+    - AGConnectCore (~> 1.2.1)
+  - HMFoundation (1.2.1.300)
+
+DEPENDENCIES:
+  - AGConnectAppMessaging (= 1.2.1.300)
+
+SPEC REPOS:
+  trunk:
+    - AGConnectAppMessaging
+    - AGConnectCore
+    - AGConnectCredential
+    - HMFoundation
+
+SPEC CHECKSUMS:
+  AGConnectAppMessaging: b8e83aa4c79a9eef97862ecbdc5ade34b8ce31d0
+  AGConnectCore: 63b20d3342f0e9b18554431b763b8b842653af0b
+  AGConnectCredential: cbb343271af1ab8b1e937f6f3c7ebc798e04eb92
+  HMFoundation: b8e0a4f582c50735df36e4f9deb87e9a438caea2
+
+PODFILE CHECKSUM: c908e3ba0b4bddc927eeb89dde5800d4c0d3ad9a
+
+COCOAPODS: 1.9.3

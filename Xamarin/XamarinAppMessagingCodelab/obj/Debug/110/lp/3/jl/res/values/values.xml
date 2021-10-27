@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="agc_iam_body_text_color">#99000000</color>
+    <color name="agc_iam_btn_color">#007DFF</color>
+    <color name="agc_iam_btn_press">#0D000000</color>
+    <color name="agc_iam_line">#33000000</color>
+    <color name="agc_iam_title_text_color">#000000</color>
+    <dimen name="agc_iam_banner_image_height">72dp</dimen>
+    <dimen name="agc_iam_body_text_size">12sp</dimen>
+    <dimen name="agc_iam_btn_margin">8dp</dimen>
+    <dimen name="agc_iam_btn_max_width">144dp</dimen>
+    <dimen name="agc_iam_btn_text_size">16sp</dimen>
+    <dimen name="agc_iam_root_padding">24dp</dimen>
+    <dimen name="agc_iam_title_text_size">18sp</dimen>
+</resources>

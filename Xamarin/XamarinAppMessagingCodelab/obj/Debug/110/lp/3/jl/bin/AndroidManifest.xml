@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.huawei.agconnect.appmessaging"
+    android:versionName="1.4.2.301" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="29" />
+
+    <application>
+        <service
+            android:name="com.huawei.agconnect.core.ServiceDiscovery"
+            android:exported="false" >
+            <meta-data
+                android:name="com.huawei.agconnect.appmessaging.AppMessagingServiceRegistrar"
+                android:value="com.huawei.agconnect.core.ServiceRegistrar" />
+            <meta-data
+                android:name="com.huawei.agconnect.appmessaging.display.AppMessagingDisplayServiceRegistrar"
+                android:value="com.huawei.agconnect.core.ServiceRegistrar" />
+        </service>
+    </application>
+
+</manifest>

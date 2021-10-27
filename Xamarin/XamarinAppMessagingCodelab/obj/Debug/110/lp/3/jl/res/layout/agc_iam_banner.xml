@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.huawei.agconnect.appmessaging.display.layout.HAMFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/banner_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/agc_iam_rounded_layout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <com.huawei.agconnect.appmessaging.display.layout.SquareImageView
+            android:id="@+id/agc_iam_banner_image"
+            android:layout_width="@dimen/agc_iam_banner_image_height"
+            android:layout_height="@dimen/agc_iam_banner_image_height"
+            android:layout_marginEnd="16dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/agc_iam_banner" />
+
+        <TextView
+            android:id="@+id/agc_iam_banner_title"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_toEndOf="@id/agc_iam_banner_image"
+            android:gravity="center|start"
+            android:singleLine="true"
+            android:textColor="@color/agc_iam_title_text_color"
+            android:textSize="@dimen/agc_iam_title_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/agc_iam_banner_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/agc_iam_banner_title"
+            android:layout_marginTop="9dp"
+            android:layout_toEndOf="@id/agc_iam_banner_image"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/agc_iam_body_text_color"
+            android:textSize="@dimen/agc_iam_body_text_size" />
+
+    </RelativeLayout>
+
+</com.huawei.agconnect.appmessaging.display.layout.HAMFrameLayout>

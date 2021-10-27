@@ -1,0 +1,50 @@
+Arguments: 
+  /usr/local/Cellar/node/15.3.0/bin/node /usr/local/Cellar/yarn/1.22.10/libexec/bin/yarn.js install
+
+PATH: 
+  /Users/yaojun/flutter/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/Library/Apple/usr/bin:/Applications/Android Studio.app/Contents/jre/jdk/Contents/Home:/Applications/Android Studio.app/Contents/gradle/gradle-6.8/bin:/Users/yaojun/Library/Android/android-sdk-macosx/tools:/Users/yaojun/Library/Android/android-sdk-macosx/platform-tools:/Users/yaojun/Library/Android/android-sdk-macosx/build-tools
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  15.3.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND mirrors.tools.huawei.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:67:26)
+
+npm manifest: 
+  {
+    "name": "@react-native-agconnect/appmessaging-demo",
+    "version": "1.2.0-beta.1",
+    "private": true,
+    "scripts": {
+      "android": "react-native run-android",
+      "ios": "react-native run-ios",
+      "start": "react-native start"
+    },
+    "dependencies": {
+      "react": "^16.6.0",
+      "react-native": "^0.60.0",
+      "@react-native-agconnect/appmessaging": "1.2.0-beta.1"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.9.0",
+      "@babel/runtime": "^7.9.0",
+      "metro-react-native-babel-preset": "^0.60.0",
+      "ncp": "^2.0.0"
+    },
+    "jest": {
+      "preset": "react-native"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

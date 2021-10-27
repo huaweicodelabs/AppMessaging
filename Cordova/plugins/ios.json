@@ -1,0 +1,21 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-screen-orientation": {
+      "PACKAGE_NAME": "com.huawei.cordova"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.huawei.cordova"
+    },
+    "cordova-plugin-agc-appmessaging": {
+      "PACKAGE_NAME": "com.huawei.cordova"
+    }
+  },
+  "dependent_plugins": {}
+}

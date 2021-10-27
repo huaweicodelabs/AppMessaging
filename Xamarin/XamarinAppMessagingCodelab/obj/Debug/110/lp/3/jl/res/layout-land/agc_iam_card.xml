@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huawei.agconnect.appmessaging.display.layout.HAMFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/agc_iam_card_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/agc_iam_card_image"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="16dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitStart"
+            android:src="@drawable/agc_iam_card" />
+
+        <RelativeLayout
+            android:id="@+id/agc_iam_card_layout_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/agc_iam_card_image"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/agc_iam_card_btn"
+                layout="@layout/agc_iam_card_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true" />
+
+            <TextView
+                android:id="@+id/agc_iam_card_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:minHeight="24dp"
+                android:textColor="@color/agc_iam_title_text_color"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/agc_iam_card_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/agc_iam_card_btn"
+                android:layout_below="@id/agc_iam_card_title"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/agc_iam_body_text_color"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</com.huawei.agconnect.appmessaging.display.layout.HAMFrameLayout>

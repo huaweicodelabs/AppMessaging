@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-agc-appmessaging" version="1.2.0-beta.1"
+        xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>appmessaging</name>
+    <js-module name="AGCAppMessaging" src="www/AGCAppMessaging.js">
+        <clobbers target="AGCAppMessaging"/>
+    </js-module>
+    <js-module src="www/appMessage.js"/>
+    <js-module src="www/bannerMessage.js"/>
+    <js-module src="www/cardMessage.js"/>
+    <js-module src="www/pictureMessage.js"/>
+    <js-module src="www/enums.js"/>
+    <js-module src="www/interfaces.js"/>
+    <js-module src="www/utils.js"/>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="AGCAppMessaging">
+                <param name="android-package"
+                       value="com.huawei.agc.cordova.appmessaging.AGCAppMessaging"/>
+            </feature>
+        </config-file>
+        <!-- Android permissions -->
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.INTERNET"/>
+        </config-file>
+
+        <!-- Hooks -->
+        <hook type="after_plugin_install" src="hooks/after_plugin_install.js"/>
+        <hook type="before_plugin_uninstall" src="hooks/before_plugin_uninstall.js"/>
+
+        <!-- Android dependencies -->
+        <framework src="res/android/plugin.gradle" custom="true" type="gradleReference"/>
+        <framework src="com.huawei.agconnect:agconnect-appmessaging:1.4.2.301"/>
+
+        <config-file parent="/*" target="AndroidManifest.xml"/>
+        <source-file src="platforms/android/src/main/java/com/huawei/agc/cordova/appmessaging/AGCAppMessaging.java"
+                     target-dir="src/com/huawei/agc/cordova/appmessaging"/>
+        <source-file src="platforms/android/src/main/java/com/huawei/agc/cordova/appmessaging/utils/CordovaUtils.java"
+                     target-dir="src/com/huawei/agc/cordova/appmessaging/utils"/>
+        <source-file
+                src="platforms/android/src/main/java/com/huawei/agc/cordova/appmessaging/utils/AppMessagingUtils.java"
+                target-dir="src/com/huawei/agc/cordova/appmessaging/utils"/>
+    </platform>
+
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="AGCAppMessaging">
+                <param name="ios-package" value="CordovaAGCAppMessaging"/>
+                <param name="onload" value="true"/>
+            </feature>
+        </config-file>
+        <source-file src="platforms/ios/CordovaAGCAppMessaging.swift"/>
+        <source-file src="platforms/ios/AGCAppMessagingViewModel.swift"/>
+        <source-file src="platforms/ios/AGCAppMessagingLogger.swift"/>
+        <source-file src="platforms/ios/AppDelegate+AGCAppMessagingPlugin.m" />
+        <header-file src="platforms/ios/AppDelegate+AGCAppMessagingPlugin.h" />
+
+        <podspec>
+            <config>
+                <source url="https://cdn.cocoapods.org/"/>
+            </config>
+            <pods use-frameworks="true">
+                <pod name="AGConnectAppMessaging" spec="1.2.1.300"/>
+            </pods>
+        </podspec>
+    </platform>
+</plugin>
