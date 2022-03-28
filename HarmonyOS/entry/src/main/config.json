@@ -1,0 +1,69 @@
+{
+  "app": {
+    "bundleName": "com.huawei.agconnect.appmessaging",
+    "vendor": "huawei",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.huawei.agconnect.appmessaging",
+    "name": ".MyApplication",
+    "mainAbility": "com.huawei.agconnect.appmessaging.MainAbility",
+    "deviceType": [
+      "phone"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry",
+      "installationFree": false
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          },
+          {
+            "actions": [
+              "android.intent.action.VIEW"
+            ],
+            "entities": [
+              "entity.system.default",
+              "entity.system.browsable"
+            ],
+            "uris": [
+              {
+                "scheme": "agckit",
+                "host": "example.com"
+              }
+            ]
+          }
+        ],
+        "orientation": "unspecified",
+        "name": "com.huawei.agconnect.appmessaging.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "$string:entry_MainAbility",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "permissions": [
+          "com.huawei.agconnect.core.DataAbilityShellProvider.PROVIDER"
+        ],
+        "name": "com.huawei.agconnect.core.provider.AGConnectInitializeAbility",
+        "type": "data",
+        "uri": "dataability://com.huawei.agconnect.appmessaging.AGConnectInitializeAbility"
+      }
+    ]
+  }
+}
