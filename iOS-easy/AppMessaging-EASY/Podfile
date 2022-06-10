@@ -1,0 +1,11 @@
+# Uncomment the next line to define a global platform for your project
+source "https://codehub-dg-g.huawei.com/AGC-iOS-Inner/Specs.git"
+# platform :ios, '9.0'
+
+target 'AGC-AppMessaging-1' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  pod 'AGConnectAppMessaging'
+
+end
