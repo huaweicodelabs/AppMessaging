@@ -1,6 +1,6 @@
 ## AppMessaging quickstart
 
-English | [中文](https://github.com/AppGalleryConnect/agc-demos/blob/main/Android/crash/README_ZH.md)
+English
 
 ## Table of Contents
 
@@ -8,7 +8,6 @@ English | [中文](https://github.com/AppGalleryConnect/agc-demos/blob/main/Andr
  * [Preparing the Environments](#preparing-the-environments)
  * [Getting Started](#getting-started)
  * [Sample Code](#sample-Code)
- * [Result](#result)
  * [Question or issues](#question-or-issues)
  * [License](#license)
 
@@ -37,4 +36,4 @@ If you have questions about how to use AppGallery Connect Demos, try the followi
 If you run into a bug in our samples, please submit an [issue](https://github.com/AppGalleryConnect/agc-demos/issues) to the Repository. Even better you can submit a [Pull Request](https://github.com/AppGalleryConnect/agc-demos/pulls) with a fix.
 
 ## License
-crash quickstart is licensed under the [Apache License, version 2.0] (http://www.apache.org/licenses/LICENSE-2.0).
+appmessaging quickstart is licensed under the [Apache License, version 2.0] (http://www.apache.org/licenses/LICENSE-2.0).

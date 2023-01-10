@@ -1,41 +1,35 @@
-## appmessaging quickstart
-
-## Table of Contents
-
- * [Introduction](#introduction)
- * [Preparing the Environments](#preparing-the-environments)
- * [Getting Started](#getting-started)
- * [Sample Code](#sample-Code)
- * [Result](#result)
- * [Question or issues](#question-or-issues)
- * [License](#license)
+# AppMessaging Demo
 
 ## Introduction
-You can use App Messaging to send relevant messages to users actively using your app to encourage them to use key app functions.
 
-## Preparing the Environments
-* A computer with DevEco Studio installed for app development
-* A device or emulator in DevEco Studio running HarmonyOS 2.0 or a later version 
 
-## Getting Started
-1. Before running the quickstart app, you need to:
-   1. If you do not have a HUAWEI Developer account, you need to [register an account](https://developer.huawei.com/consumer/en/doc/start/registration-and-verification-0000001053628148) and pass identity verification.
-   2. Use your account to sign in to [AppGallery Connect](https://developer.huawei.com/consumer/cn/doc/development/AppGallery-connect-Guides/agc-get-started), create an app, and set Package type to APK (Android app).
-   3. Enable AppMessaging. (For details, please refer to the development guide.)
-   4. Select Project Settings,download the agconnect-services.json file from AppGallery Connect and copy the agconnect-services.json file to the app root directory.
+You can use App Messaging of AppGallery Connect to send relevant messages to target users actively using your app to encourage them to use key app functions, or send attractive promotion activities to enhance user loyalty. App Messaging even allows you to customize how your messages look and the way they will be sent, in addition to default message layouts. You can also define events for triggering message sending to your users when you want to engage your users in your app's activities.
+
+## Preparation
+
+Before using the demo app, prepare your HarmonyOS development environment.
+
+### Register as a developer.
+
+Register a [HUAWEI account](https://developer.huawei.com/consumer/en/).
+
+### Create an app.
+
+Create an app and set Package type to App (HarmonyOS app).Then enable AppMessaging service and creat a message.
+
+### Build
+
+To build this demo, please first import the demo in the DevEco Studio (2.1+). Then download the file "agconnect-services.json" of the app on AGC, and add the file to the app root directory(\entry) of the demo.
+
+## Environment Requirements
+
+DevEco Studio 2.1 or later.
 
 ## Sample Code
-The SDK supports message debugging.
-Sample code: src\main\java\com\huawei\agc\quickstart\appmessaging\MainActivitySlice.java
 
-## Result
-**Log in to AppGallery Connect and create an AppOnForeground message**</br>
+Main entry of the app, which processes received links.
+Sample code: src\main\java\com\huawei\agconnect\AppMessaging\slice\MainAbilitySlice.java
 
-## Question or issues
-If you have questions about how to use AppGallery Connect Demos, try the following options:  
+## License
 
-* [Stack Overflow](https://stackoverflow.com/users/14194729/appgallery-connect) is the best place for any programming questions. Be sure to tag your question with appgallery.  
-* [Huawei Developer Forum](https://forums.developer.huawei.com/forumPortal/en/home?fid=0101188387844930001) AppGallery Module is great for general questions, or seeking recommendations and opinions.
-
-If you run into a bug in our samples, please submit an [issue](https://github.com/AppGalleryConnect/agc-demos/issues) to the Repository. Even better you can submit a [Pull Request](https://github.com/AppGalleryConnect/agc-demos/pulls) with a fix.
-
+AppMessaging demo is licensed under the [Apache License, version 2.0] (http://www.apache.org/licenses/LICENSE-2.0).
